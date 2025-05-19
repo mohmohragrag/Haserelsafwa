@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حساب وزن الجملونات</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>حساب وزن الجملونات</h1>
+
+  <!-- عمدان رئيسية -->
+  <div class="section">
+    <h2>العمدان الرئيسية</h2>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 1 (مم):</label>
+      <input type="number" id="main_fl1_length" min="0" value="1500" />
+      <label>عرض الفلانشة 1 (مم):</label>
+      <input type="number" id="main_fl1_width" min="0" value="150" />
+      <label>سمك الفلانشة 1 (مم):</label>
+      <input type="number" id="main_fl1_thickness" min="0" value="7" />
+      <label>عدد العمدان:</label>
+      <input type="number" id="main_count" min="0" value="4" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 2 (مم):</label>
+      <input type="number" id="main_fl2_length" min="0" value="1500" />
+      <label>عرض الفلانشة 2 (مم):</label>
+      <input type="number" id="main_fl2_width" min="0" value="150" />
+      <label>سمك الفلانشة 2 (مم):</label>
+      <input type="number" id="main_fl2_thickness" min="0" value="7" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الويب (مم):</label>
+      <input type="number" id="main_web_length" min="0" value="1500" />
+      <label>عرض الويب (مم):</label>
+      <input type="number" id="main_web_width" min="0" value="200" />
+      <label>سمك الويب (مم):</label>
+      <input type="number" id="main_web_thickness" min="0" value="5" />
+    </div>
+  </div>
+
+  <!-- عمدان الوسط -->
+  <div class="section">
+    <h2>عمدان الوسط</h2>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 1 (مم):</label>
+      <input type="number" id="mid_fl1_length" min="0" value="1500" />
+      <label>عرض الفلانشة 1 (مم):</label>
+      <input type="number" id="mid_fl1_width" min="0" value="150" />
+      <label>سمك الفلانشة 1 (مم):</label>
+      <input type="number" id="mid_fl1_thickness" min="0" value="7" />
+      <label>عدد العمدان:</label>
+      <input type="number" id="mid_count" min="0" value="2" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 2 (مم):</label>
+      <input type="number" id="mid_fl2_length" min="0" value="1500" />
+      <label>عرض الفلانشة 2 (مم):</label>
+      <input type="number" id="mid_fl2_width" min="0" value="150" />
+      <label>سمك الفلانشة 2 (مم):</label>
+      <input type="number" id="mid_fl2_thickness" min="0" value="7" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الويب (مم):</label>
+      <input type="number" id="mid_web_length" min="0" value="1500" />
+      <label>عرض الويب (مم):</label>
+      <input type="number" id="mid_web_width" min="0" value="200" />
+      <label>سمك الويب (مم):</label>
+      <input type="number" id="mid_web_thickness" min="0" value="5" />
+    </div>
+  </div>
+
+  <!-- عمدان الوجهة -->
+  <div class="section">
+    <h2>عمدان الوجهة</h2>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 1 (مم):</label>
+      <input type="number" id="face_fl1_length" min="0" value="1500" />
+      <label>عرض الفلانشة 1 (مم):</label>
+      <input type="number" id="face_fl1_width" min="0" value="150" />
+      <label>سمك الفلانشة 1 (مم):</label>
+      <input type="number" id="face_fl1_thickness" min="0" value="7" />
+      <label>عدد العمدان:</label>
+      <input type="number" id="face_count" min="0" value="2" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 2 (مم):</label>
+      <input type="number" id="face_fl2_length" min="0" value="1500" />
+      <label>عرض الفلانشة 2 (مم):</label>
+      <input type="number" id="face_fl2_width" min="0" value="150" />
+      <label>سمك الفلانشة 2 (مم):</label>
+      <input type="number" id="face_fl2_thickness" min="0" value="7" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الويب (مم):</label>
+      <input type="number" id="face_web_length" min="0" value="1500" />
+      <label>عرض الويب (مم):</label>
+      <input type="number" id="face_web_width" min="0" value="200" />
+      <label>سمك الويب (مم):</label>
+      <input type="number" id="face_web_thickness" min="0" value="5" />
+    </div>
+  </div>
+
+  <!-- رفاتر العدلة -->
+  <div class="section">
+    <h2>رفاتر العدلة</h2>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 1 (مم):</label>
+      <input type="number" id="raf_fl1_length" min="0" value="1500" />
+      <label>عرض الفلانشة 1 (مم):</label>
+      <input type="number" id="raf_fl1_width" min="0" value="150" />
+      <label>سمك الفلانشة 1 (مم):</label>
+      <input type="number" id="raf_fl1_thickness" min="0" value="7" />
+      <label>عدد الرفاتر:</label>
+      <input type="number" id="raf_count" min="0" value="6" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 2 (مم):</label>
+      <input type="number" id="raf_fl2_length" min="0" value="1500" />
+      <label>عرض الفلانشة 2 (مم):</label>
+      <input type="number" id="raf_fl2_width" min="0" value="150" />
+      <label>سمك الفلانشة 2 (مم):</label>
+      <input type="number" id="raf_fl2_thickness" min="0" value="7" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الويب (مم):</label>
+      <input type="number" id="raf_web_length" min="0" value="1500" />
+      <label>عرض الويب (مم):</label>
+      <input type="number" id="raf_web_width" min="0" value="200" />
+      <label>سمك الويب (مم):</label>
+      <input type="number" id="raf_web_thickness" min="0" value="5" />
+    </div>
+  </div>
+
+  <!-- رفاتر الطيارة -->
+  <div class="section">
+    <h2>رفاتر الطيارة</h2>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 1 (مم):</label>
+      <input type="number" id="fly_fl1_length" min="0" value="1500" />
+      <label>عرض الفلانشة 1 (مم):</label>
+      <input type="number" id="fly_fl1_width" min="0" value="150" />
+      <label>سمك الفلانشة 1 (مم):</label>
+      <input type="number" id="fly_fl1_thickness" min="0" value="7" />
+      <label>عدد الرفاتر:</label>
+      <input type="number" id="fly_count" min="0" value="4" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الفلانشة 2 (مم):</label>
+      <input type="number" id="fly_fl2_length" min="0" value="1500" />
+      <label>عرض الفلانشة 2 (مم):</label>
+      <input type="number" id="fly_fl2_width" min="0" value="150" />
+      <label>سمك الفلانشة 2 (مم):</label>
+      <input type="number" id="fly_fl2_thickness" min="0" value="7" />
+    </div>
+    <div class="flex-row group-inputs">
+      <label>طول الويب (مم):</label>
+      <input type="number" id="fly_web_length" min="0" value="1500" />
+      <label>عرض الويب (مم):</label>
+      <input type="number" id="fly_web_width" min="0" value="200" />
+      <label>سمك الويب (مم):</label>
+      <input type="number" id="fly_web_thickness" min="0" value="5" />
+    </div>
+  </div>
+
+  <input type="button" value="احسب الوزن الإجمالي" id="calcBtn" />
+
+  <div id="results" class="results" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
